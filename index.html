@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rising Developer Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
+      <h1>Victor Manzi</h1>
+      <p class="subtitle">Junior Software Developer</p>
+    </header>
+
+    <div class="education">
+      <h2 class="section-header"><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="education-card">
+        <h3 class="degree">High School Diploma</h3>
+        <p class="institution">Lycee De Ruhengeri</p>
+        <p class="graduation-year">Still approving</p>
+      </div>
+      <div class="education-card">
+        <h3 class="degree">Capacity</h3>
+        <p class="institution">Mostly capable of web development and Design</p>
+        <p class="graduation-year">Junior</p>
+      </div>
+    </div>
+
+    <section class="bio">
+      <h2>About Me</h2>
+      <p>
+        I'm a rising software developer passionate about building meaningful digital experiences. I enjoy learning new technologies and contributing to open source.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-fill alt1 delay-1" style="--target-width: 95%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-fill alt2 delay-2" style="--target-width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">PHP</div>
+        <div class="skill-bar">
+          <div class="skill-fill alt3 delay-3" style="--target-width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar">
+          <div class="skill-fill alt4 delay-4" style="--target-width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">React.js</div>
+        <div class="skill-bar">
+          <div class="skill-fill alt1 delay-5" style="--target-width: 75%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>TaskMate</h3>
+        <p>Developing websites either Dynamic or static.</p>
+      </div>
+      <div class="project">
+        <h3>Blog API</h3>
+        <p>Restful blog API with authentication and CRUD features.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="return handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" style="top: 20px;">Send</button>
+      </form>
+    </section>
+
+    <div class="social-links">
+      <a href="https://github.com/victomanzi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/+250788828217" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:manziv91@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/victomanzi" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> Victor Manzi. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Dynamic year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
